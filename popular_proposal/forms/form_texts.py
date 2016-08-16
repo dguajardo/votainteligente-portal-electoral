@@ -11,6 +11,7 @@ WHEN_CHOICES = [
 ]
 
 TOPIC_CHOICES = (('', u'Selecciona una categoría'),
+                 ('areasverdes', u'Áreas verdes y espacios públicos'),
                  ('salud', u'Salud'),
                  ('educacion', u'Educación'),
                  ('cultura', u'Cultura y patrimonio'),
@@ -18,7 +19,6 @@ TOPIC_CHOICES = (('', u'Selecciona una categoría'),
                  ('empleabilidad', u'Empleabilidad y emprendimiento'),
                  ('deporte', u'Deporte y recreación'),
                  ('conectividad', u'Conectividad y obras'),
-                 ('areasverdes', u'Áreas verdes y espacios públicos'),
                  ('seguridad', u'Seguridad y prevención de catástrofes'),
                  ('medioambiente', u'Medio ambiente y recolección de basura'),
                  ('participacion', u'Participación y sociedad civil'),
