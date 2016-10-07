@@ -337,6 +337,11 @@ class CandidacyContacts(CandidacyTestCaseBase):
         self.assertIsInstance(response.context['form'], AuthenticationForm)
         self.assertTemplateUsed(response, 'backend_candidate/auth_login.html')
 
+    def test_unify_candidacies_and_previously_created_users(self):
+        user = User.objects.create(username='the_user', mail='candidate@party.com')
+        CandidacyContact.objects.create(candidate=self.candidate,
+                                        mail='candidate@party.com')
+
 
 class SendNewUserToCandidate(CandidacyTestCaseBase):
     def setUp(self):
